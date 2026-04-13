@@ -28,7 +28,19 @@ int main () {
     {
         tabuleiro[5 + i][7] = navio[i];
     }
+   
+    // Navio na diagonal descendo
+    for (i = 0; i < 3; i++)
+    {
+        tabuleiro[1 + i][1 + i] = navio[i];
+    }
     
+    // navio na diagonal subindo
+    for (i = 0; i < 3; i++)
+    {
+        tabuleiro[7 - i][2 + i] = navio[i];
+    }
+
     // Mostrar tabuleiro
     printf("TABULEIRO BATALHA NAVAL\n");
 
